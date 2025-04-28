@@ -1,74 +1,100 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+# 🃏 Super Trunfo - Projeto em C
 
-# Desafio Super Trunfo - Países - Comparação das Cartas
-
-Bem-vindo ao desafio "Super Trunfo - Países"! Neste projeto, você desenvolverá um sistema para comparar cartas baseadas em atributos de cidades. O desafio é dividido em três níveis: Novato, Aventureiro e Mestre. Cada nível adiciona novas funcionalidades e complexidades, permitindo um aprendizado progressivo.
-
-## 🏅 Nível Novato
-
-No nível Novato, você começará implementando a lógica básica de comparação entre cartas utilizando estruturas de decisão `if` e `if-else`.
-
-### 🚩 Objetivos:
-- **Cadastro de Cartas:** O sistema permitirá ao usuário cadastrar cartas de cidades, incluindo informações como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos.
-- **Comparação de Cartas:** O sistema comparará os atributos de duas cartas e determinará a vencedora com base em uma propriedade específica (população, área, PIB, etc.), escolhida no código.
-- **Exibição de Resultados:** Após a comparação, o sistema exibirá qual carta venceu com base na regra: maior valor vence, exceto em densidade populacional, onde o menor valor é o vencedor.
-
-### 📥 Entrada de Dados:
-- Os dados das cartas serão inseridos manualmente via terminal.
-- O sistema solicitará interativamente as informações de cada carta.
-
-### 📤 Saída de Dados:
-- Após o cadastro, as propriedades da cidade serão exibidas de forma organizada.
-- O resultado da comparação será mostrado, indicando a carta vencedora.
+<div align="center">
+  <img src="https://img.shields.io/badge/Projeto%20em-C-blue.svg" alt="Projeto em C" />
+  <img src="https://img.shields.io/badge/Nível-Iniciante-green.svg" alt="Nível Iniciante" />
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen.svg" alt="Status Concluído" />
+</div>
 
 ---
 
-## 🏅 Nível Aventureiro
+## 📋 Sobre o Projeto
 
-No nível Aventureiro, você expandirá o sistema para incluir a comparação aninhada e a criação de um menu interativo usando `switch`.
+O **Super Trunfo** é uma recriação do clássico jogo de cartas, agora em versão digital utilizando a linguagem **C**.
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Menu Interativo:** O usuário poderá escolher diferentes atributos para comparação através de um menu.
-- **Comparação Aninhada:** Implementação de lógica de comparação mais complexa, utilizando estruturas aninhadas para tomar decisões baseadas em múltiplos atributos.
+O objetivo principal é comparar atributos de duas cartas cadastradas (como população, área, PIB, densidade populacional e PIB per capita) para determinar a carta vencedora, com base em regras específicas.
 
-### 🚩 Novas Funcionalidades:
-- **Cadastro de Cartas:** Similar ao nível Novato, com a adição de comparação de múltiplos atributos.
-- **Menu Interativo:** Uso de `switch` para criar um menu que permite ao jogador escolher os atributos a serem comparados.
-- **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
+Este projeto foi desenvolvido como parte de um desafio prático, visando o aperfeiçoamento de **estruturas de decisão** (`if`, `if-else`, `switch`) e o uso de **operadores ternários**.
 
 ---
 
-## 🏅 Nível Mestre
+## ✨ Funcionalidades
 
-No nível Mestre, o desafio se intensifica com a adição de funcionalidades avançadas, como menus dinâmicos e lógica de decisão complexa com operadores ternários.
+- 📋 **Cadastro de Cartas**:
+  - Estado, código da carta, cidade, população, área, PIB e número de pontos turísticos.
 
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Escolha de Dois Atributos:** O usuário poderá escolher dois atributos para comparação entre as cartas.
-- **Lógica de Decisão Complexa:** Implementação de estruturas de decisão aninhadas e encadeadas, além do uso de operadores ternários para determinar a carta vencedora.
-- **Menus Dinâmicos:** Os menus serão dinâmicos, permitindo uma navegação fluida entre as opções de comparação.
+- 🧮 **Cálculo Automático**:
+  - Densidade Populacional (`população / área`)
+  - PIB per Capita (`PIB / população`)
 
-### 🚩 Novas Funcionalidades:
-- **Comparação de Dois Atributos:** O sistema comparará dois atributos simultaneamente para determinar a carta vencedora.
-- **Lógica Avançada:** Uso de operadores ternários e lógica aninhada para lidar com comparações complexas.
-- **Empates:** O sistema será capaz de lidar com empates, exibindo mensagens apropriadas.
-- **Exibição de Resultados:** Exibição dos resultados das comparações de forma clara e interativa.
+- 🖥️ **Menu Interativo**:
+  - Escolha dinâmica do atributo que será utilizado para a comparação.
 
----
+- 🆚 **Comparação de Atributos**:
+  - População, Área, PIB ➔ vence o maior valor.
+  - Densidade Populacional ➔ vence o menor valor.
+  - PIB per Capita ➔ vence o maior valor.
 
-## 📋 Requisitos Funcionais Comuns
-- **Cadastro de Cartas:** O sistema deve permitir o cadastro de cartas com as informações necessárias.
-- **Comparação:** O sistema deve comparar as cartas e determinar a vencedora com base nas regras estabelecidas.
-- **Exibição de Resultados:** Os resultados devem ser exibidos de forma clara, indicando a carta vencedora.
-
-## 📌 Requisitos Não Funcionais Comuns
-- **Usabilidade:** A interface do usuário deve ser simples e intuitiva.
-- **Performance:** O sistema deve executar operações sem atrasos perceptíveis.
-- **Manutenibilidade:** O código deve ser bem estruturado e documentado.
-- **Confiabilidade:** O sistema deve ser robusto e capaz de lidar com entradas inválidas de forma adequada.
+- ⚡ **Uso de Estruturas de Decisão**:
+  - `if`, `if-else`, `if-else if`
+  - `switch-case`
+  - Operador ternário `? :`
 
 ---
 
-Boa sorte no desenvolvimento deste desafio e aproveite para aprender e se divertir enquanto progride pelos níveis!
+## 🎯 Desafios e Soluções
 
-Equipe de Ensino - MateCheck
+| Desafio | Objetivo | Solução |
+|:--------|:---------|:--------|
+| **1** | Cadastrar cartas e calcular atributos derivados | Utilização de `struct` e fórmulas matemáticas |
+| **2** | Comparar dois atributos fixos usando `if` e `if-else` | Desenvolvimento de funções específicas |
+| **3** | Implementar menus interativos e comparações dinâmicas | `switch`, operadores lógicos e operador ternário |
+
+---
+
+## 🚀 Como Executar o Projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+
+# Compile o projeto
+gcc super_trunfo.c -o super_trunfo.exe
+
+# Execute o programa
+./super_trunfo.exe
+```
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Linguagem C
+- GCC (GNU Compiler Collection)
+- Visual Studio Code
+- Git e GitHub
+
+---
+
+## 👩‍💻 Autora
+
+Desenvolvido com 💻❤️ por **Vanessa Melo Mendes**.
+
+- GitHub: [@vmendesdev](https://github.com/vmendesdev)
+
+---
+
+> Este projeto faz parte do meu portfólio pessoal e demonstra habilidades práticas em lógica de programação, estruturas de decisão e desenvolvimento de aplicações em C.
+
+---
+
+## 📌 Observações
+
+- Projeto didático.
+- Código comentado para facilitar o entendimento.
+- Pode ser expandido com novas funcionalidades no futuro.
+
+---
+
+# 🏆 Obrigado por visitar meu projeto!
